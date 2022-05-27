@@ -1,0 +1,25 @@
+{
+    "name": "nextcitizens-snippets",
+    "displayName": "NextCitizens Snippets",
+    "description": "Snippet bas on NextCitizens",
+    "version": "0.0.1",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "lua",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ach-git/NextCitizens-Snippets"
+    }
+}
