@@ -3,6 +3,7 @@
 # NextCitizens Snippets
 
 Snippets for NextCitizens (https://github.com/NextCitizens/ncs_core). Support: lua
+Crédit: ach#9690(Extension), MATH#2805 & Shazuub#8691(Docs)
 
 ## Features
 
@@ -12,9 +13,9 @@ Snippets for NextCitizens (https://github.com/NextCitizens/ncs_core). Support: l
 
 NCS is a core created by the community, for the community. It was designed to enhance FiveM server development based on RolePlay. NCS was created and maintained by the community and will not be left behind.
 
-## Discord 
+## Discord
 
-https://discord.gg/cJad4jcA2d
+[Official Discord of NextCitizens.](https://discord.gg/T8u4JsserD)
 
 ## Documentation
 

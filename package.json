@@ -2,15 +2,31 @@
     "name": "nextcitizens-snippets",
     "displayName": "NextCitizens-Snippets",
     "description": "Snippet bas on NextCitizens",
-    "version": "0.0.1",
-    "publisher": "ach",
+    "version": "0.1.2",
+    "publisher": "NextCitizens-Snippets",
     "icon": "images/icon.png",
     "license": "GPL v3",
     "engines": {
         "vscode": "^1.67.0"
     },
+    "author": {
+        "name": "NextCitizens-Snippets"
+    },
     "categories": [
         "Snippets"
+    ],
+    "keywords": [
+        "NCs",
+        "NextCitizens",
+        "RP",
+        "GTA",
+        "GTAV",
+        "RolePlay",
+        "Fivem",
+        "lua",
+        "ESX",
+        "vRP",
+        "QB"
     ],
     "contributes": {
         "snippets": [

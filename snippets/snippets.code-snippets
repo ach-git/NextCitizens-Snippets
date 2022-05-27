@@ -1,101 +1,157 @@
 {
-  "_NCS:math_groupDigits": {
-    "prefix": "_NCS:math_groupDigits",
+  "API_Maths:groupDigits": {
+    "prefix": "API_Maths:groupDigits",
     "body": [
-      "_NCS:math_groupDigits(${1:digits})"
+      "API_Maths:groupDigits(${1:digits})"
     ],
-    "description": "ncs_core/src/api/math/groupDigits.lua"
+    "description": "ncs_core/src/api/maths/shared/groupDigits.lua"
   },
-  "_NCS:math_roundNumber": {
-    "prefix": "_NCS:math_roundNumber",
+  "API_Maths:round": {
+    "prefix": "API_Maths:round",
     "body": [
-      "_NCS:math_roundNumber(${1:number}, ${2:decimalPlace})"
+      "API_Maths:round(${1:number}, ${2:decimalPlace})"
     ],
-    "description": "ncs_core/src/api/math/roundNumber.lua"
+    "description": "ncs_core/src/api/maths/shared/roundNumber.lua"
   },
-  "_NCS:ped_playAnim": {
-    "prefix": "_NCS:ped_playAnim",
+  "API_Ped:playAnimation": {
+    "prefix": "API_Ped:playAnimation",
     "body": [
-      "_NCS:ped_playAnim(${1:dict}, ${2:anim}, ${3:flag}, ${4:blendin}, ${5:blendout}, ${6:playbackRate}, ${7:loop}, ${8:delay}, ${9:playbackRate}, ${10:duration})"
+      "API_Ped:playAnimation(${1:dict}, ${2:anim}, ${3:flag}, ${4:blendin}, ${5:blendout}, ${6:playbackRate}, ${7:loop}, ${8:delay}, ${9:playbackRate}, ${10:duration})"
     ],
-    "description": "ncs_core/src/api/peds/client/playAnimation.lua"
+    "description": "ncs_core/src/api/ped/client/playAnimation.lua"
   },
-  "_NCS:players_getClosestPlayer": {
-    "prefix": "_NCS:players_getClosestPlayer",
+  "API_Player:getClosest": {
+    "prefix": "API_Player:getClosest",
     "body": [
-      "_NCS:players_getClosestPlayer()"
+      "API_Player:getClosest"
     ],
-    "description": "ncs_core/src/api/players/client/getClosestPlayer.lua"
+    "description": "ncs_core/src/api/player/client/getClosestPlayer.lua"
   },
-  "_NCS:players_getLicense": {
-    "prefix": "_NCS:players_getLicense",
+  "API_Player:getLicense": {
+    "prefix": "API_Player:getLicense",
     "body": [
-      "_NCS:players_getLicense(${1:playerId})"
+      "API_Player:getLicense(${1:playerId})"
     ],
-    "description": "ncs_core/src/api/players/server/getPlayerLicense.lua"
+    "description": "ncs_core/src/api/player/server/getPlayerLicense.lua"
   },
-  "_NCS:input_showKeyboard": {
-    "prefix": "_NCS:input_showKeyboard",
+  "API_Player:showKeyboard": {
+    "prefix": "API_Player:showKeyboard",
     "body": [
-      "_NCS:input_showKeyboard(${1:TextEntry}, ${2:ExampleText}, ${3:MaxStringLenght})"
+      "API_Player:showKeyboard(${1:TextEntry}, ${2:ExampleText}, ${3:MaxStringLenght})"
     ],  
-    "description": "ncs_core/src/api/input/keyboardInput.lua"
+    "description": "ncs_core/src/api/player/client/showKeyboard.lua"
   },
-  "_NCS:vehicles_deleteVehicle": {
-    "prefix": "_NCS:vehicles_deleteVehicle",
+  "API_Vehicles:delete": {
+    "prefix": "API_Vehicles:delete",
     "body": [
-      "_NCS:vehicles_deleteVehicle(${1:vehicleEntity})"
+      "API_Vehicles:delete(${1:vehicleEntity})"
     ],  
     "description": "ncs_core/src/api/vehicles/client/deleteVehicle.lua"
   },
-  "_NCS:vehicles_getVehicleProperties": {
-    "prefix": "_NCS:vehicles_getVehicleProperties",
+  "API_Vehicles:getProperties": {
+    "prefix": "API_Vehicles:getProperties",
     "body": [
-      "_NCS:vehicles_getVehicleProperties(${1:vehicleEntity})"
+      "API_Vehicles:getProperties(${1:vehicleEntity})"
     ],  
     "description": "ncs_core/src/api/vehicles/client/getVehicleProperties.lua"
   },
-  "_NCS:vehicles_repairVehicle": {
-    "prefix": "_NCS:vehicles_repairVehicle",
+  "API_Vehicles:repair": {
+    "prefix": "API_Vehicles:repair",
     "body": [
-      "_NCS:vehicles_repairVehicle(${1:vehicleEntity})"
+      "API_Vehicles:repair(${1:vehicleEntity})"
     ],
     "description": "ncs_core/src/api/vehicles/client/repairVehicle.lua"
   },
-  "_NCS:setVehicleProperties": {
-    "prefix": "_NCS:setVehicleProperties",
+  "API_Vehicles:setProperties": {
+    "prefix": "API_Vehicles:setProperties",
     "body": [
-      "_NCS:setVehicleProperties(${1:vehicleEntity}, ${2:props})"
+      "API_Vehicles:setProperties(${1:vehicleEntity}, ${2:props})"
     ],
     "description": "ncs_core/src/api/vehicles/client/setVehicleProperties.lua"
   },
-  "_NCS:vehicles_spawnVehicle": {
-    "prefix": "_NCS:vehicles_spawnVehicle",
+  "API_Vehicles:spawn": {
+    "prefix": "API_Vehicles:spawn",
     "body": [
-      "_NCS:vehicles_spawnVehicle(${1:modelName}, ${2:coords}, ${3:coords}, ${4:coords}, ${5:coords})"
+      "API_Vehicles:spawn(${1:modelName}, ${2:coords}, ${3:coords}, ${4:coords}, ${5:coords})"
     ],
     "description": "ncs_core/src/api/vehicles/client/setVehicleProperties.lua"
   },
 
-  "_NCS:net_toServer": {
-    "prefix": "_NCS:net_toServer",
+  "_NCS:triggerServerEvent": {
+    "prefix": "_NCS:triggerServerEvent",
     "body": [
-      "_NCS:net_toServer(${1:eventName}, ${2:...})"
+      "_NCS:triggerServerEvent(${1:eventName}, ${2:...})"
     ],
-    "description": "ncs_core/src/api/net/client/toServer.lua"
+    "description": "ncs_core/src/core/client.lua"
   },
-  "_NCS:net_toClient": {
-    "prefix": "_NCS:net_toClient",
+  "_NCS:triggerClientEvent": {
+    "prefix": "_NCS:triggerClientEvent",
     "body": [
-        "_NCS:net_toClient(${1:eventName}, ${2:targetId}, ${3:...})"
+        "_NCS:triggerClientEvent(${1:eventName}, ${2:targetId}, ${3:...})"
     ],
     "description": "ncs_core/src/core/server.lua"
   },
-  "_NCS:net_formatEvent": {
-    "prefix": "_NCS:net_formatEvent",
+  "_NCS:getVersion": {
+    "prefix": "_NCS:getVersion",
     "body": [
-        "_NCS:net_formatEvent(${1:eventName}, ${2:targetId}, ${3:...})"
+        "_NCS:getVersion()"
     ],
-    "description": "ncs_core/src/core/server.lua"
+    "description": "ncs_core/src/core/shared.lua"
+  },
+  "_NCS:trace": {
+    "prefix": "_NCS:trace",
+    "body": [
+        "_NCS:trace(${1:message}, ${2:logLevelIndex})"
+    ],
+    "description": "ncs_core/src/core/shared.lua"
+  },
+  "_NCS:coreTrace": {
+    "prefix": "_NCS:coreTrace",
+    "body": [
+        "_NCS:coreTrace(${1:message})"
+    ],
+    "description": "ncs_core/src/core/shared.lua"
+  },
+  "_NCS:die": {
+    "prefix": "_NCS:die",
+    "body": [
+        "_NCS:die(${1:reason})"
+    ],
+    "description": "ncs_core/src/core/shared.lua"
+  },
+  "_NCS:registerNetEvent": {
+    "prefix": "_NCS:registerNetEvent",
+    "body": [
+        "_NCS:registerNetEvent(${1:eventName}, ${2:...})"
+    ],
+    "description": "ncs_core/src/core/shared.lua"
+  },
+  "_NCS:handleEvent": {
+    "prefix": "_NCS:handleEvent",
+    "body": [
+        "_NCS:handleEvent(${1:eventName}, ${2:callback})"
+    ],
+    "description": "ncs_core/src/core/shared.lua"
+  },
+  "_NCS:triggerEvent": {
+    "prefix": "_NCS:triggerEvent",
+    "body": [
+        "_NCS:triggerEvent(${1:eventName}, ${2:...})"
+    ],
+    "description": "ncs_core/src/core/shared.lua"
+  },
+  "_NCS:onReady": {
+    "prefix": "_NCS:onReady",
+    "body": [
+        "_NCS:onReady(${1:callback})"
+    ],
+    "description": "ncs_core/src/core/shared.lua"
+  },
+  "_NCS:formatEvent": {
+    "prefix": "_NCS:formatEvent",
+    "body": [
+        "_NCS:formatEvent(${1:eventName})"
+    ],
+    "description": "ncs_core/src/core/shared.lua"
   }
 }
