@@ -6,7 +6,7 @@ Snippets for NextCitizens (https://github.com/NextCitizens/ncs_core). Support: l
 
 ## Features
 
-![App Screenshot](https://cdn.discordapp.com/attachments/862693343358877727/979757385520381984/Nouveau_projet_17.png)
+![App Screenshot](https://cdn.discordapp.com/attachments/929070459104952400/979789433672966154/unknown_2022.05.27-18.51.gif)
 
 ## About us
 
