@@ -1,78 +1,78 @@
 {
-  "API_Maths:groupDigits": {
-    "prefix": "API_Maths:groupDigits",
+  "groupDigits": {
+    "prefix": "groupDigits",
     "body": [
-      "API_Maths:groupDigits(${1:digits})"
+      "groupDigits(${1:digits})"
     ],
     "description": "ncs_core/src/api/maths/shared/groupDigits.lua"
   },
-  "API_Maths:round": {
-    "prefix": "API_Maths:round",
+  "round": {
+    "prefix": "round",
     "body": [
-      "API_Maths:round(${1:number}, ${2:decimalPlace})"
+      "round(${1:number}, ${2:decimalPlace})"
     ],
     "description": "ncs_core/src/api/maths/shared/roundNumber.lua"
   },
-  "API_Ped:playAnimation": {
-    "prefix": "API_Ped:playAnimation",
+  "playAnimation": {
+    "prefix": "playAnimation",
     "body": [
-      "API_Ped:playAnimation(${1:dict}, ${2:anim}, ${3:flag}, ${4:blendin}, ${5:blendout}, ${6:playbackRate}, ${7:loop}, ${8:delay}, ${9:playbackRate}, ${10:duration})"
+      "playAnimation(${1:dict}, ${2:anim}, ${3:flag}, ${4:blendin}, ${5:blendout}, ${6:playbackRate}, ${7:loop}, ${8:delay}, ${9:playbackRate}, ${10:duration})"
     ],
     "description": "ncs_core/src/api/ped/client/playAnimation.lua"
   },
-  "API_Player:getClosest": {
-    "prefix": "API_Player:getClosest",
+  "getClosest": {
+    "prefix": "getClosest",
     "body": [
-      "API_Player:getClosest"
+      "getClosest"
     ],
     "description": "ncs_core/src/api/player/client/getClosestPlayer.lua"
   },
-  "API_Player:getLicense": {
-    "prefix": "API_Player:getLicense",
+  "getLicense": {
+    "prefix": "getLicense",
     "body": [
-      "API_Player:getLicense(${1:playerId})"
+      "getLicense(${1:playerId})"
     ],
     "description": "ncs_core/src/api/player/server/getPlayerLicense.lua"
   },
-  "API_Player:showKeyboard": {
-    "prefix": "API_Player:showKeyboard",
+  "showKeyboard": {
+    "prefix": "showKeyboard",
     "body": [
-      "API_Player:showKeyboard(${1:TextEntry}, ${2:ExampleText}, ${3:MaxStringLenght})"
+      "showKeyboard(${1:TextEntry}, ${2:ExampleText}, ${3:MaxStringLenght})"
     ],  
     "description": "ncs_core/src/api/player/client/showKeyboard.lua"
   },
-  "API_Vehicles:delete": {
-    "prefix": "API_Vehicles:delete",
+  "delete": {
+    "prefix": "delete",
     "body": [
-      "API_Vehicles:delete(${1:vehicleEntity})"
+      "delete(${1:vehicleEntity})"
     ],  
     "description": "ncs_core/src/api/vehicles/client/deleteVehicle.lua"
   },
-  "API_Vehicles:getProperties": {
-    "prefix": "API_Vehicles:getProperties",
+  "getProperties": {
+    "prefix": "getProperties",
     "body": [
-      "API_Vehicles:getProperties(${1:vehicleEntity})"
+      "getProperties(${1:vehicleEntity})"
     ],  
     "description": "ncs_core/src/api/vehicles/client/getVehicleProperties.lua"
   },
-  "API_Vehicles:repair": {
-    "prefix": "API_Vehicles:repair",
+  "repair": {
+    "prefix": "repair",
     "body": [
-      "API_Vehicles:repair(${1:vehicleEntity})"
+      "repair(${1:vehicleEntity})"
     ],
     "description": "ncs_core/src/api/vehicles/client/repairVehicle.lua"
   },
-  "API_Vehicles:setProperties": {
-    "prefix": "API_Vehicles:setProperties",
+  "setProperties": {
+    "prefix": "setProperties",
     "body": [
-      "API_Vehicles:setProperties(${1:vehicleEntity}, ${2:props})"
+      "setProperties(${1:vehicleEntity}, ${2:props})"
     ],
     "description": "ncs_core/src/api/vehicles/client/setVehicleProperties.lua"
   },
-  "API_Vehicles:spawn": {
-    "prefix": "API_Vehicles:spawn",
+  "spawn": {
+    "prefix": "spawn",
     "body": [
-      "API_Vehicles:spawn(${1:modelName}, ${2:coords}, ${3:coords}, ${4:coords}, ${5:coords})"
+      "spawn(${1:modelName}, ${2:coords}, ${3:coords}, ${4:coords}, ${5:coords})"
     ],
     "description": "ncs_core/src/api/vehicles/client/setVehicleProperties.lua"
   },
