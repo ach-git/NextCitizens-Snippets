@@ -1,81 +1,259 @@
 {
-  "groupDigits": {
-    "prefix": "groupDigits",
+  "Discord.addAsset": {
+    "prefix": "Discord.addAsset",
     "body": [
-      "groupDigits(${1:digits})"
+      "Discord.addAsset(${1:name}, ${2:text})"
     ],
-    "description": "ncs_core/src/api/maths/shared/groupDigits.lua"
+    "description": "Soon"
   },
-  "round": {
-    "prefix": "round",
+  "Discord.addFirstAction": {
+    "prefix": "Discord.addFirstAction",
     "body": [
-      "round(${1:number}, ${2:decimalPlace})"
+      "Discord.addFirstAction(${1:label}, ${2:url})"
     ],
-    "description": "ncs_core/src/api/maths/shared/roundNumber.lua"
+    "description": "Soon"
   },
-  "playAnimation": {
-    "prefix": "playAnimation",
+  "Discord.addSecondAction": {
+    "prefix": "Discord.addSecondAction",
     "body": [
-      "playAnimation(${1:dict}, ${2:anim}, ${3:flag}, ${4:blendin}, ${5:blendout}, ${6:playbackRate}, ${7:loop}, ${8:delay}, ${9:playbackRate}, ${10:duration})"
+      "Discord.addSecondAction(${1:label}, ${2:url})"
     ],
-    "description": "ncs_core/src/api/ped/client/playAnimation.lua"
+    "description": "Soon"
   },
-  "getClosest": {
-    "prefix": "getClosest",
+  "Discord.addSmallAsset": {
+    "prefix": "Discord.addSmallAsset",
     "body": [
-      "getClosest"
+      "Discord.addSmallAsset(${1:name}, ${2:text})"
     ],
-    "description": "ncs_core/src/api/player/client/getClosestPlayer.lua"
+    "description": "Soon"
   },
-  "getLicense": {
-    "prefix": "getLicense",
+  "Discord.details": {
+    "prefix": "Discord.details",
     "body": [
-      "getLicense(${1:playerId})"
+      "Discord.details(${1:details})"
     ],
-    "description": "ncs_core/src/api/player/server/getPlayerLicense.lua"
+    "description": "Soon"
   },
-  "showKeyboard": {
-    "prefix": "showKeyboard",
+  "Discord.setup": {
+    "prefix": "Discord.setup",
     "body": [
-      "showKeyboard(${1:TextEntry}, ${2:ExampleText}, ${3:MaxStringLenght})"
-    ],  
-    "description": "ncs_core/src/api/player/client/showKeyboard.lua"
-  },
-  "delete": {
-    "prefix": "delete",
-    "body": [
-      "delete(${1:vehicleEntity})"
-    ],  
-    "description": "ncs_core/src/api/vehicles/client/deleteVehicle.lua"
-  },
-  "getProperties": {
-    "prefix": "getProperties",
-    "body": [
-      "getProperties(${1:vehicleEntity})"
-    ],  
-    "description": "ncs_core/src/api/vehicles/client/getVehicleProperties.lua"
-  },
-  "repair": {
-    "prefix": "repair",
-    "body": [
-      "repair(${1:vehicleEntity})"
+      "Discord.setup(${1:appId})"
     ],
-    "description": "ncs_core/src/api/vehicles/client/repairVehicle.lua"
+    "description": "Soon"
   },
-  "setProperties": {
-    "prefix": "setProperties",
+
+
+  "Maths.groupDigits": {
+    "prefix": "Maths.groupDigits",
     "body": [
-      "setProperties(${1:vehicleEntity}, ${2:props})"
+      "Maths.groupDigits(${1:digits})"
     ],
-    "description": "ncs_core/src/api/vehicles/client/setVehicleProperties.lua"
+    "description": "Soon"
   },
-  "spawn": {
-    "prefix": "spawn",
+  "Maths.round": {
+    "prefix": "Maths.round",
     "body": [
-      "spawn(${1:modelName}, ${2:coords}, ${3:coords}, ${4:coords}, ${5:coords})"
+      "Maths.round(${1:number}, ${2:decimalPlace})"
     ],
-    "description": "ncs_core/src/api/vehicles/client/setVehicleProperties.lua"
+    "description": "Soon"
   },
+
+
+  "Objects.serverCreateObject": {
+    "prefix": "Objects.serverCreateObject",
+    "body": [
+      "Objects.serverCreateObject(${1:props}, ${2:x}, ${3:y}, ${4:z}, ${5:h})"
+    ],
+    "description": "Soon"
+  },
+
+
+  "Ped.playAnimation": {
+    "prefix": "Ped.playAnimation",
+    "body": [
+      "Ped.playAnimation(${1:props}, ${2:x}, ${3:y}, ${4:z}, ${5:h})"
+    ],
+    "description": "Soon"
+  },
+
+
+  "Player.getClosest": {
+    "prefix": "Player.getClosest",
+    "body": [
+      "Player.getClosest()"
+    ],
+    "description": "Soon"
+  },
+  "Player.registerKeyBind": {
+    "prefix": "Player.registerKeyBind",
+    "body": [
+      "Player.registerKeyBind(${1:name}, ${2:defaultKey}, ${3:desc}, ${4:callback})"
+    ],
+    "description": "Soon"
+  },
+  "Player.show3DText": {
+    "prefix": "Player.show3DText",
+    "body": [
+      "Player.show3DText(${1:x}, ${2:y}, ${3:z}, ${4:text})"
+    ],
+    "description": "Soon"
+  },
+  "Player.showAdvancedNotification": {
+    "prefix": "Player.showAdvancedNotification",
+    "body": [
+      "Player.showAdvancedNotification(${1:icon}, ${2:type}, ${3:sender}, ${4:title}, ${5:text}, ${6:colorBg})"
+    ],
+    "description": "Soon"
+  },
+  "Player.showHelpNotification": {
+    "prefix": "Player.showHelpNotification",
+    "body": [
+      "Player.showHelpNotification(${1:text})"
+    ],
+    "description": "Soon"
+  },
+  "Player.showKeyboard": {
+    "prefix": "Player.showKeyboard",
+    "body": [
+      "Player.showKeyboard(${1:textEntry}, ${2:exampleText}, ${3:maxInputLength})"
+    ],
+    "description": "Soon"
+  },
+  "Player.showMissionNotification": {
+    "prefix": "Player.showMissionNotification",
+    "body": [
+      "Player.showMissionNotification(${1:text}, ${2:time})"
+    ],
+    "description": "Soon"
+  },
+  "Player.showNotification": {
+    "prefix": "Player.showNotification",
+    "body": [
+      "Player.showNotification(${1:text}, ${2:colorBg})"
+    ],
+    "description": "Soon"
+  },
+  "Player.showSubtitle": {
+    "prefix": "Player.showSubtitle",
+    "body": [
+      "Player.showSubtitle(${1:text})"
+    ],
+    "description": "Soon"
+  },
+  
+  "Player.getLicense": {
+    "prefix": "Player.getLicense",
+    "body": [
+      "Player.getLicense(${1:playerId})"
+    ],
+    "description": "Soon"
+  },
+  "Player.getName": {
+    "prefix": "Player.getName",
+    "body": [
+      "Player.getName(${1:playerId})"
+    ],
+    "description": "Soon"
+  },
+
+  
+  "Strings.contains": {
+    "prefix": "Strings.contains",
+    "body": [
+      "Strings.contains(${1:str}, ${2:otherStr})"
+    ],
+    "description": "Soon"
+  },
+  "Strings.firstToUpper": {
+    "prefix": "Strings.firstToUpper",
+    "body": [
+      "Strings.firstToUpper(${1:str})"
+    ],
+    "description": "Soon"
+  },
+
+  
+  "Tables.sortAlphabetically": {
+    "prefix": "Tables.sortAlphabetically",
+    "body": [
+      "Tables.sortAlphabetically(${1:table})"
+    ],
+    "description": "Soon"
+  },
+
+
+  "Vehicles.delete": {
+    "prefix": "Tables.delete",
+    "body": [
+      "Tables.delete(${1:vehicleEntity})"
+    ],
+    "description": "Soon"
+  },
+  "Vehicles.getClosest": {
+    "prefix": "Tables.getClosest",
+    "body": [
+      "Tables.getClosest(${1:coords})"
+    ],
+    "description": "Soon"
+  },
+  "Vehicles.getModel": {
+    "prefix": "Tables.getModel",
+    "body": [
+      "Tables.getModel(${1:vehicleId})"
+    ],
+    "description": "Soon"
+  },
+  "Vehicles.getProperties": {
+    "prefix": "Tables.getProperties",
+    "body": [
+      "Tables.getProperties(${1:vehicleEntity})"
+    ],
+    "description": "Soon"
+  },
+  "Vehicles.getStates": {
+    "prefix": "Tables.getStates",
+    "body": [
+      "Tables.getStates(${1:vehicle})"
+    ],
+    "description": "Soon"
+  },
+  "Vehicles.getVehicles": {
+    "prefix": "Tables.getVehicles",
+    "body": [
+      "Tables.getVehicles()"
+    ],
+    "description": "Soon"
+  },
+  "Vehicles.repair": {
+    "prefix": "Tables.repair",
+    "body": [
+      "Tables.repair(${1:vehicleEntity})"
+    ],
+    "description": "Soon"
+  },
+  "Vehicles.setProperties": {
+    "prefix": "Tables.setProperties",
+    "body": [
+      "Tables.setProperties(${1:vehicleEntity}, ${2:props})"
+    ],
+    "description": "Soon"
+  },
+  "Vehicles.spawn": {
+    "prefix": "Tables.spawn",
+    "body": [
+      "Tables.spawn(${1:modelName}, ${2:coords}, ${3:heading}, ${4:cb}, ${5:clientSide})"
+    ],
+    "description": "Soon"
+  },
+  
+  "Vehicles.serverSpawn": {
+    "prefix": "Tables.serverSpawn",
+    "body": [
+      "Tables.serverSpawn(${1:modelName}, ${2:coords}, ${3:cb})"
+    ],
+    "description": "Soon"
+  },
+
 
   "_NCS:triggerServerEvent": {
     "prefix": "_NCS:triggerServerEvent",
@@ -148,6 +326,14 @@
     "description": "ncs_core/src/core/shared.lua"
   },
   "_NCS:formatEvent": {
+    "prefix": "_NCS:formatEvent",
+    "body": [
+        "_NCS:formatEvent(${1:eventName})"
+    ],
+    "description": "ncs_core/src/core/shared.lua"
+  },
+
+  "export[\"ncs_core\"]:getLibrary()": {
     "prefix": "_NCS:formatEvent",
     "body": [
         "_NCS:formatEvent(${1:eventName})"

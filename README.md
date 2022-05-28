@@ -1,13 +1,14 @@
 ![App Screenshot](https://cdn.discordapp.com/attachments/862693343358877727/979757385520381984/Nouveau_projet_17.png)
 
-# NextCitizens Snippets
+# NextCitizens Snippets v0.3.1
 
 Snippets for NextCitizens (https://github.com/NextCitizens/ncs_core). Support: lua
-Crédit: ach#9690(Extension), MATH#2805 & Shazuub#8691(Docs)
+
+Crédits: ach#9690(Extension), MATH#2805 & Shazuub#8691(Docs)
 
 ## Features
 
-![App Screenshot](https://cdn.discordapp.com/attachments/929070459104952400/979789433672966154/unknown_2022.05.27-18.51.gif)
+![App Screenshot](https://cdn.discordapp.com/attachments/980096506147254312/980152532628279346/unknown_2022.05.28-18.54.gif)
 
 ## About us
 
