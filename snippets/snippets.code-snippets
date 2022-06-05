@@ -1,257 +1,622 @@
 {
-  "Discord.addAsset": {
-    "prefix": "Discord.addAsset",
+  "Camera:createCamera": {
+    "prefix": "Camera:createCamera",
     "body": [
-      "Discord.addAsset(${1:name}, ${2:text})"
-    ],
-    "description": "Soon"
-  },
-  "Discord.addFirstAction": {
-    "prefix": "Discord.addFirstAction",
-    "body": [
-      "Discord.addFirstAction(${1:label}, ${2:url})"
-    ],
-    "description": "Soon"
-  },
-  "Discord.addSecondAction": {
-    "prefix": "Discord.addSecondAction",
-    "body": [
-      "Discord.addSecondAction(${1:label}, ${2:url})"
-    ],
-    "description": "Soon"
-  },
-  "Discord.addSmallAsset": {
-    "prefix": "Discord.addSmallAsset",
-    "body": [
-      "Discord.addSmallAsset(${1:name}, ${2:text})"
-    ],
-    "description": "Soon"
-  },
-  "Discord.details": {
-    "prefix": "Discord.details",
-    "body": [
-      "Discord.details(${1:details})"
-    ],
-    "description": "Soon"
-  },
-  "Discord.setup": {
-    "prefix": "Discord.setup",
-    "body": [
-      "Discord.setup(${1:appId})"
+      "Camera:createCamera(${1:cameraCoords}, ${2:cameraHeading})"
     ],
     "description": "Soon"
   },
 
 
-  "Maths.groupDigits": {
-    "prefix": "Maths.groupDigits",
+
+
+  "Database:async_insert": {
+    "prefix": "Database:async_insert",
     "body": [
-      "Maths.groupDigits(${1:digits})"
+      "Database:async_insert(${1:query}, ${2:parameters}, {3:cb})"
     ],
     "description": "Soon"
   },
-  "Maths.round": {
-    "prefix": "Maths.round",
+  "Database:async_query": {
+    "prefix": "Database:async_query",
     "body": [
-      "Maths.round(${1:number}, ${2:decimalPlace})"
+      "Database:async_query(${1:query}, ${2:parameters}, {3:cb})"
+    ],
+    "description": "Soon"
+  },
+  "Database:insert": {
+    "prefix": "Database:insert",
+    "body": [
+      "Database:insert(${1:query}, ${2:parameters}, {3:cb})"
+    ],
+    "description": "Soon"
+  },
+  "Database:query": {
+    "prefix": "Database:query",
+    "body": [
+      "Database:query(${1:query}, ${2:parameters}, {3:cb})"
     ],
     "description": "Soon"
   },
 
 
-  "Objects.serverCreateObject": {
-    "prefix": "Objects.serverCreateObject",
+
+  "Discord:addAsset": {
+    "prefix": "Discord:addAsset",
     "body": [
-      "Objects.serverCreateObject(${1:props}, ${2:x}, ${3:y}, ${4:z}, ${5:h})"
+      "Discord:addAsset(${1:name}, ${2:text})"
+    ],
+    "description": "Soon"
+  },
+  "Discord:addFirstAction": {
+    "prefix": "Discord:addFirstAction",
+    "body": [
+      "Discord:addFirstAction(${1:label}, ${2:url})"
+    ],
+    "description": "Soon"
+  },
+  "Discord:addSecondAction": {
+    "prefix": "Discord:addSecondAction",
+    "body": [
+      "Discord:addSecondAction(${1:label}, ${2:url})"
+    ],
+    "description": "Soon"
+  },
+  "Discord:addSmallAsset": {
+    "prefix": "Discord:addSmallAsset",
+    "body": [
+      "Discord:addSmallAsset(${1:name}, ${2:text})"
+    ],
+    "description": "Soon"
+  },
+  "Discord:details": {
+    "prefix": "Discord:setDetails",
+    "body": [
+      "Discord:details(${1:details})"
+    ],
+    "description": "Soon"
+  },
+  "Discord:setup": {
+    "prefix": "Discord:setup",
+    "body": [
+      "Discord:setup(${1:appId})"
     ],
     "description": "Soon"
   },
 
 
-  "Ped.playAnimation": {
-    "prefix": "Ped.playAnimation",
+
+
+  "Keybind:unregisterKeyMapping": {
+    "prefix": "Keybind:registerKeyMapping",
     "body": [
-      "Ped.playAnimation(${1:props}, ${2:x}, ${3:y}, ${4:z}, ${5:h})"
+      "Keybind:registerKeyMapping(${1:key})"
+    ],
+    "description": "Soon"
+  },
+  "Keybind:registerKeyMapping": {
+    "prefix": "Keybind:registerKeyMapping",
+    "body": [
+      "Keybind:registerKeyMapping(${1:key}, ${2:command}, ${3:label}, ${4:input}, ${5:onPressed}, ${6:onReleased})"
     ],
     "description": "Soon"
   },
 
 
-  "Player.getClosest": {
-    "prefix": "Player.getClosest",
+
+
+  "Maths:groupDigits": {
+    "prefix": "Maths:groupDigits",
     "body": [
-      "Player.getClosest()"
+      "Maths:groupDigits(${1:digits})"
     ],
     "description": "Soon"
   },
-  "Player.registerKeyBind": {
-    "prefix": "Player.registerKeyBind",
+  "Maths:round": {
+    "prefix": "Maths:round",
     "body": [
-      "Player.registerKeyBind(${1:name}, ${2:defaultKey}, ${3:desc}, ${4:callback})"
+      "Maths:round(${1:number}, ${2:decimalPlace})"
     ],
     "description": "Soon"
   },
-  "Player.show3DText": {
-    "prefix": "Player.show3DText",
+  "Maths:trim": {
+    "prefix": "Maths:trim",
     "body": [
-      "Player.show3DText(${1:x}, ${2:y}, ${3:z}, ${4:text})"
+      "Maths:trim(${1:number})"
     ],
     "description": "Soon"
   },
-  "Player.showAdvancedNotification": {
-    "prefix": "Player.showAdvancedNotification",
+
+
+
+
+  "Objects:createObject": {
+    "prefix": "Objects:createObject",
     "body": [
-      "Player.showAdvancedNotification(${1:icon}, ${2:type}, ${3:sender}, ${4:title}, ${5:text}, ${6:colorBg})"
+      "Objects:createObject(${1:props}, ${2:x}, ${3:y}, ${4:z}, ${5:heading}, ${6:freeze})"
     ],
     "description": "Soon"
   },
-  "Player.showHelpNotification": {
-    "prefix": "Player.showHelpNotification",
+  "Objects:deleteObject": {
+    "prefix": "Objects:deleteObject",
     "body": [
-      "Player.showHelpNotification(${1:text})"
+      "Objects:deleteObject(${1:objectId})"
     ],
     "description": "Soon"
   },
-  "Player.showKeyboard": {
-    "prefix": "Player.showKeyboard",
+
+
+
+  "Ped:clearPed": {
+    "prefix": "Ped:clearPed",
     "body": [
-      "Player.showKeyboard(${1:textEntry}, ${2:exampleText}, ${3:maxInputLength})"
+      "Ped:clearPed(${1:pedId})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  "Player.showMissionNotification": {
-    "prefix": "Player.showMissionNotification",
+  "Ped:driveVehicle": {
+    "prefix": "Ped:driveVehicle",
     "body": [
-      "Player.showMissionNotification(${1:text}, ${2:time})"
+      "Ped:driveVehicle(${1:pedId})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  "Player.showNotification": {
-    "prefix": "Player.showNotification",
+  "Ped:getAllPeds": {
+    "prefix": "Ped:getAllPeds",
     "body": [
-      "Player.showNotification(${1:text}, ${2:colorBg})"
+      "Ped:getAllPeds()"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  "Player.showSubtitle": {
-    "prefix": "Player.showSubtitle",
+  "Ped:getClosetPed": {
+    "prefix": "Ped:getClosetPed",
     "body": [
-      "Player.showSubtitle(${1:text})"
+      "Ped:getClosetPed()"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
+  },
+  "Ped:getDistance": {
+    "prefix": "Ped:getDistance",
+    "body": [
+      "Ped:getDistance(${1:pedId}, ${2:coords})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:getNearestCoords": {
+    "prefix": "Ped:getNearestCoords",
+    "body": [
+      "Ped:getNearestCoords(${1:pedId}, ${2:coords}, ${3:radius})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:getPosition": {
+    "prefix": "Ped:getPosition",
+    "body": [
+      "Ped:getPosition(${1:pedId})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:giveWeapon": {
+    "prefix": "Ped:giveWeapon",
+    "body": [
+      "Ped:giveWeapon(${1:pedId}, ${2:weaponName}, ${3:ammo}, ${4:isHidden}, ${5:forceInHand})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:giveWeaponComponent": {
+    "prefix": "Ped:giveWeaponComponent",
+    "body": [
+      "Ped:giveWeaponComponent(${1:pedId}, ${2:weaponName}, ${3:componentName})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:hasWeapon": {
+    "prefix": "Ped:hasWeapon",
+    "body": [
+      "Ped:hasWeapon(${1:pedId}, ${2:weaponName})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:hasWeaponComponent": {
+    "prefix": "Ped:hasWeaponComponent",
+    "body": [
+      "Ped:hasWeaponComponent(${1:pedId}, ${2:weaponName}, ${3:componentName})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:playAnimation": {
+    "prefix": "Ped:playAnimation",
+    "body": [
+      "Ped:playAnimation(${1:pedId}, ${2:dict}, ${3:anim}, ${4:flag}, ${5:blendin}, ${6:blendout}, ${7:playbackRate}, ${8:duration})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:removeWeapon": {
+    "prefix": "Ped:removeWeapon",
+    "body": [
+      "Ped:removeWeapon(${1:pedId}, ${2:weaponName})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:removeWeaponComponent": {
+    "prefix": "Ped:removeWeaponComponent",
+    "body": [
+      "Ped:removeWeaponComponent(${1:pedId}, ${2:weaponName}, ${3:componentName})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:setFreeze": {
+    "prefix": "Ped:setFreeze",
+    "body": [
+      "Ped:setFreeze(${1:pedId}, ${2:state})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:setHeading": {
+    "prefix": "Ped:setHeading",
+    "body": [
+      "Ped:setHeading(${1:pedId}, ${2:heading})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:setInvincible": {
+    "prefix": "Ped:setInvincible",
+    "body": [
+      "Ped:setInvincible(${1:pedId}, ${2:state})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:setPosition": {
+    "prefix": "Ped:setPosition",
+    "body": [
+      "Ped:setPosition(${1:pedId}, ${2:coords})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:setVisible": {
+    "prefix": "Ped:setVisible",
+    "body": [
+      "Ped:setVisible(${1:pedId}, ${2:state})"
+    ],
+    "description": "Client-Side"
+  },
+  "Ped:setWalkToPosition": {
+    "prefix": "Ped:setWalkToPosition",
+    "body": [
+      "Ped:setWalkToPosition(${1:pedId}, ${2:coords}, ${3:speed}, ${4:duration}, ${5:heading}, ${6:distanceToSlide})"
+    ],
+    "description": "Client-Side"
+  },
+
+  "Ped:deletePed": {
+    "prefix": "Ped:deletePed",
+    "body": [
+      "Ped:deletePed(${1:pedId})"
+    ],
+    "description": "Server-Side"
+  },
+  "Ped:spawnPed": {
+    "prefix": "Ped:spawnPed",
+    "body": [
+      "Ped:spawnPed(${1:modelName}, ${2:x}, ${3:y}, ${4:z}, ${5:heading})"
+    ],
+    "description": "Server-Side"
+  },
+
+
+
+
+  "Player:getClosest": {
+    "prefix": "Player:getClosest",
+    "body": [
+      "Player:getClosest()"
+    ],
+    "description": "Client-Side"
+  },
+  "Player:setModel": {
+    "prefix": "Player:setModel",
+    "body": [
+      "Player:setModel(${1:modelName})"
+    ],
+    "description": "Client-Side"
+  },
+  "Player:show3DText": {
+    "prefix": "Player:show3DText",
+    "body": [
+      "Player:show3DText(${1:x}, ${2:y}, ${3:z}, ${4:text})"
+    ],
+    "description": "Client-Side"
+  },
+  "Player:showAdvancedNotification": {
+    "prefix": "Player:showAdvancedNotification",
+    "body": [
+      "Player:showAdvancedNotification(${1:icon}, ${2:type}, ${3:sender}, ${4:title}, ${5:text}, ${6:colorBg})"
+    ],
+    "description": "Client-Side"
+  },
+  "Player:showFloatingHelpNotification": {
+    "prefix": "Player:showFloatingHelpNotification",
+    "body": [
+      "Player:showFloatingHelpNotification(${1:text}, ${2:pos})"
+    ],
+    "description": "Client-Side"
+  },
+  "Player:showHelpNotification": {
+    "prefix": "Player:showHelpNotification",
+    "body": [
+      "Player:showHelpNotification(${1:text})"
+    ],
+    "description": "Client-Side"
+  },
+  "Player:showKeyboard": {
+    "prefix": "Player:showKeyboard",
+    "body": [
+      "Player:showKeyboard(${1:textEntry}, ${2:exampleText}, ${3:maxInputLength})"
+    ],
+    "description": "Client-Side"
+  },
+  "Player:showMissionNotification": {
+    "prefix": "Player:showMissionNotification",
+    "body": [
+      "Player:showMissionNotification(${1:text}, ${2:time})"
+    ],
+    "description": "Client-Side"
+  },
+  "Player:showNotification": {
+    "prefix": "Player:showNotification",
+    "body": [
+      "Player:showNotification(${1:text}, ${2:colorBg})"
+    ],
+    "description": "Client-Side"
+  },
+  "Player:showSubtitle": {
+    "prefix": "Player:showSubtitle",
+    "body": [
+      "Player:showSubtitle(${1:text})"
+    ],
+    "description": "Client-Side"
   },
   
-  "Player.getLicense": {
-    "prefix": "Player.getLicense",
+  "Player:getLicense": {
+    "prefix": "Player:getLicense",
     "body": [
-      "Player.getLicense(${1:playerId})"
+      "Player:getLicense(${1:playerId})"
     ],
-    "description": "Soon"
+    "description": "Server-Side"
   },
-  "Player.getName": {
-    "prefix": "Player.getName",
+  "Player:getName": {
+    "prefix": "Player:getName",
     "body": [
-      "Player.getName(${1:playerId})"
+      "Player:getName(${1:playerId})"
     ],
-    "description": "Soon"
+    "description": "Server-Side"
   },
+  "Player:getIdentifier": {
+    "prefix": "Player:getIdentifier",
+    "body": [
+      "Player:getIdentifier(${1:playerSrc})"
+    ],
+    "description": "Server-Side"
+  },
+  "Player:getIdentifiers": {
+    "prefix": "Player:getIdentifiers",
+    "body": [
+      "Player:getIdentifiers(${1:playerSrc})"
+    ],
+    "description": "Server-Side"
+  },
+
+
 
   
-  "Strings.contains": {
-    "prefix": "Strings.contains",
+  "Scaleform:requestMovie": {
+    "prefix": "Player:requestMovie",
     "body": [
-      "Strings.contains(${1:str}, ${2:otherStr})"
+      "Player:requestMovie(${1:movieName})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  "Strings.firstToUpper": {
-    "prefix": "Strings.firstToUpper",
+  "Scaleform:showBigFreemodeMessage": {
+    "prefix": "Player:showBigFreemodeMessage",
     "body": [
-      "Strings.firstToUpper(${1:str})"
+      "Player:showBigFreemodeMessage(${1:title}, ${2:message}, ${3:time})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
+  "Scaleform:showBreakingNews": {
+    "prefix": "Player:showBreakingNews",
+    "body": [
+      "Player:showBreakingNews(${1:title}, ${2:message}, ${3:bottom}, ${4:time})"
+    ],
+    "description": "Client-Side"
+  },
+  "Scaleform:showTrafficMovie": {
+    "prefix": "Player:showTrafficMovie",
+    "body": [
+      "Player:showTrafficMovie(${1:time})"
+    ],
+    "description": "Client-Side"
+  },
+
+
+
+
+  "Streaming:requestAnimDict": {
+    "prefix": "Streaming:requestAnimDict",
+    "body": [
+      "Streaming:requestAnimDict(${1:animDict})"
+    ],
+    "description": "Client-Side"
+  },
+  "Streaming:requestAnimSet": {
+    "prefix": "Streaming:requestAnimSet",
+    "body": [
+      "Streaming:requestAnimSet(${1:animSet})"
+    ],
+    "description": "Client-Side"
+  },
+  "Streaming:requestModel": {
+    "prefix": "Streaming:requestModel",
+    "body": [
+      "Streaming:requestModel(${1:modelHash})"
+    ],
+    "description": "Client-Side"
+  },
+  "Streaming:requestNamedPtfxAsset": {
+    "prefix": "Streaming:requestNamedPtfxAsset",
+    "body": [
+      "Streaming:requestNamedPtfxAsset(${1:assetName})"
+    ],
+    "description": "Client-Side"
+  },
+  "Streaming:requestStrealedTextureDict": {
+    "prefix": "Streaming:requestStrealedTextureDict",
+    "body": [
+      "Streaming:requestStrealedTextureDict(${1:textureDict})"
+    ],
+    "description": "Client-Side"
+  },
+  "Streaming:requestWeaponAsset": {
+    "prefix": "Streaming:requestWeaponAsset",
+    "body": [
+      "Streaming:requestWeaponAsset(${1:weaponHash})"
+    ],
+    "description": "Client-Side"
+  },
+
+
+
+
+  "Strings:contains": {
+    "prefix": "Strings:contains",
+    "body": [
+      "Strings:contains(${1:stringToFind}, ${2:pattern})"
+    ],
+    "description": "Client & Server-Side"
+  },
+  "Strings:firstToUpper": {
+    "prefix": "Strings:firstToUpper",
+    "body": [
+      "Strings:firstToUpper(${1:stringToUpper})"
+    ],
+    "description": "Client & Server-Side"
+  },
+  "Strings:split": {
+    "prefix": "Strings:split",
+    "body": [
+      "Strings:split(${1:str}, ${2:delimiter})"
+    ],
+    "description": "Client & Server-Side"
+  },
+
+
 
   
-  "Tables.sortAlphabetically": {
-    "prefix": "Tables.sortAlphabetically",
+  "Tables:printTable": {
+    "prefix": "Tables:printTable",
     "body": [
-      "Tables.sortAlphabetically(${1:table})"
+      "Tables:printTable(${1:tableToPrint})"
     ],
-    "description": "Soon"
+    "description": "Client & Server-Side"
+  },
+  "Tables:randomTable": {
+    "prefix": "Tables:randomTable",
+    "body": [
+      "Tables:randomTable(${1:tableR})"
+    ],
+    "description": "Client & Server-Side"
+  },
+  "Tables:sortAlphabetically": {
+    "prefix": "Tables:sortAlphabetically",
+    "body": [
+      "Tables:sortAlphabetically(${1:tableToSort})"
+    ],
+    "description": "Client & Server-Side"
   },
 
 
-  "Vehicles.delete": {
-    "prefix": "Tables.delete",
+
+
+  "UI:registerAction": {
+    "prefix": "UI:registerAction",
     "body": [
-      "Tables.delete(${1:vehicleEntity})"
+      "UI:registerAction(${1:moduleName}, ${2:functionName}, ${3:callback})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  "Vehicles.getClosest": {
-    "prefix": "Tables.getClosest",
+  "UI:sendAction": {
+    "prefix": "UI:sendAction",
     "body": [
-      "Tables.getClosest(${1:coords})"
+      "UI:sendAction(${1:moduleName}, ${2:functionName}, ${3:argsList})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  "Vehicles.getModel": {
-    "prefix": "Tables.getModel",
+
+
+
+
+  "Vehicles:delete": {
+    "prefix": "Vehicles:delete",
     "body": [
-      "Tables.getModel(${1:vehicleId})"
+      "Vehicles:delete(${1:vehicleEntity})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  "Vehicles.getProperties": {
-    "prefix": "Tables.getProperties",
+  "Vehicles:getClosest": {
+    "prefix": "Vehicles:getClosest",
     "body": [
-      "Tables.getProperties(${1:vehicleEntity})"
+      "Vehicles:getClosest(${1:coords})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  "Vehicles.getStates": {
-    "prefix": "Tables.getStates",
+  "Vehicles:getModel": {
+    "prefix": "Vehicles:getModel",
     "body": [
-      "Tables.getStates(${1:vehicle})"
+      "Vehicles:getModel(${1:vehicleId})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  "Vehicles.getVehicles": {
-    "prefix": "Tables.getVehicles",
+  "Vehicles:getProperties": {
+    "prefix": "Vehicles:getProperties",
     "body": [
-      "Tables.getVehicles()"
+      "Vehicles:getProperties(${1:vehicleEntity})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  "Vehicles.repair": {
-    "prefix": "Tables.repair",
+  "Vehicles:getStates": {
+    "prefix": "Vehicles:getStates",
     "body": [
-      "Tables.repair(${1:vehicleEntity})"
+      "Vehicles:getStates(${1:vehicle})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  "Vehicles.setProperties": {
-    "prefix": "Tables.setProperties",
+  "Vehicles:getVehicles": {
+    "prefix": "Vehicles:getVehicles",
     "body": [
-      "Tables.setProperties(${1:vehicleEntity}, ${2:props})"
+      "Vehicles:getVehicles()"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  "Vehicles.spawn": {
-    "prefix": "Tables.spawn",
+  "Vehicles:repair": {
+    "prefix": "Vehicles:repair",
     "body": [
-      "Tables.spawn(${1:modelName}, ${2:coords}, ${3:heading}, ${4:cb}, ${5:clientSide})"
+      "Vehicles:repair(${1:vehicleEntity})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
   },
-  
-  "Vehicles.serverSpawn": {
-    "prefix": "Tables.serverSpawn",
+  "Vehicles:setProperties": {
+    "prefix": "Vehicles:setProperties",
     "body": [
-      "Tables.serverSpawn(${1:modelName}, ${2:coords}, ${3:cb})"
+      "Vehicles:setProperties(${1:vehicleEntity}, ${2:props})"
     ],
-    "description": "Soon"
+    "description": "Client-Side"
+  },
+  "Vehicles:spawn": {
+    "prefix": "Vehicles:spawn",
+    "body": [
+      "Vehicles:spawn(${1:modelName}, ${2:coords}, ${3:heading}, ${4:cb}, ${5:clientSide})"
+    ],
+    "description": "Client-Side"
   },
 
 
@@ -334,9 +699,9 @@
   },
 
   "export[\"ncs_core\"]:getLibrary()": {
-    "prefix": "_NCS:formatEvent",
+    "prefix": "export[\"ncs_core\"]:getLibrary()",
     "body": [
-        "_NCS:formatEvent(${1:eventName})"
+        "export[\"ncs_core\"]:getLibrary()"
     ],
     "description": "ncs_core/src/core/shared.lua"
   }
